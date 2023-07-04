@@ -1,0 +1,150 @@
+body {
+  background-color: #eee;
+}
+.container {
+  padding: 0;
+  margin: 0;
+  background-color: #ddd;
+  margin: 20px auto;
+  padding: 20px;
+  width: 70%;
+  list-style: none;
+  /* display: flex; */
+  /* justify-content: space-between; */
+  border-bottom: outset;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.input {
+  width: 60%;
+  height: 35px;
+  border-radius: 10px;
+  border-style: none;
+}
+
+.add {
+  width: 95px;
+  height: 40px;
+  border-radius: 10px;
+  background-color: red;
+  color: rgb(255, 255, 255);
+  font-size: 17px;
+  font-weight: bold;
+  margin-left: 20px;
+  border-style: none;
+  cursor: pointer;
+}
+
+.task {
+  background-color: #ddd;
+  margin: 20px auto;
+  padding: 20px;
+  width: 70%;
+  display: flex;
+  flex-wrap: wrap;
+  /* justify-content: space-between; */
+  text-transform: capitalize;
+
+  border-radius: 10px;
+  justify-content: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 24px;
+  font-weight: bolder;
+}
+.DoneTask {
+  background-color: #ddd;
+  margin: 20px auto;
+  padding: 20px 20px 50px 20px;
+  width: 70%;
+  border-radius: 10px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 24px;
+  font-weight: bolder;
+
+  position: relative;
+  /* text-align: justify; */
+}
+
+.DoneTask::before {
+  content: "Completed tasks";
+
+  text-align: center;
+  /* margin: 0 auto; */
+  margin-bottom: 20px;
+  display: block;
+  color: blue;
+}
+.DoneTask .btnclr {
+  display: block;
+  margin: 5px auto;
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.viw-Done-data {
+  background-color: rgba(157, 255, 0, 0.253);
+  text-decoration: line-through;
+  text-decoration-color: red;
+
+  margin-bottom: 10px;
+  padding: 10px;
+
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  white-space: nowrap; /* يمنع النص من الانزلاق إلى سطر جديد */
+  margin-right: 10px; /* يخلق مسافة بين العناصر الجانبية */
+}
+
+.viw-spn {
+  word-break: break-word;
+  overflow-wrap: break-word;
+  white-space: normal;
+}
+
+.viw-data {
+  background-color: #fff;
+  margin: 5px auto;
+  padding: 10px;
+  width: 90%;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: outset;
+  border-radius: 10px;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.del-spn,
+.btnclr {
+  width: 95px;
+  height: 40px;
+  border-radius: 10px;
+  background-color: red;
+  color: rgb(255, 255, 255);
+  font-size: 17px;
+  font-weight: bold;
+  margin-left: 5px;
+  border-style: none;
+  cursor: pointer;
+}
+
+.Done-spn {
+  width: 95px;
+  height: 40px;
+  border-radius: 10px;
+  background-color: green;
+  color: rgb(255, 255, 255);
+  font-size: 17px;
+  font-weight: bold;
+  margin-left: 5px;
+  border-style: none;
+  cursor: pointer;
+}
