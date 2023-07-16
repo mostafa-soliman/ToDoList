@@ -51,6 +51,7 @@ function createTaskElement(taskText) {
 
   btnDone.addEventListener("click", function (event) {
     event.preventDefault(); // منع سلوك النموذج الافتراضي
+    dv.remove();
 
     let taskText = spn.innerText;
     // التحقق مما إذا كان العنصر موجودًا بالفعل في قائمة العناصر المكتملة
